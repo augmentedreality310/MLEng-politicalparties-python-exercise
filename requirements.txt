@@ -10,3 +10,7 @@ pytest
 pandas
 numpy
 pytest-mock
+scikit-learn
+textblob
+torch
+transformers

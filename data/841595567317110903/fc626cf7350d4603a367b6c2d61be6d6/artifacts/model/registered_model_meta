@@ -1,0 +1,2 @@
+model_name: tweet_classifier_sentiment
+model_version: '1'

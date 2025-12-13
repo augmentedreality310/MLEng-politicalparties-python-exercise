@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1765611851003
+current_stage: None
+description: null
+last_updated_timestamp: 1765611851003
+name: tweet_classifier_sentiment
+run_id: fc626cf7350d4603a367b6c2d61be6d6
+run_link: null
+source: /Users/abhinavchawla/MLEng-politicalparties-python-exercise/data/841595567317110903/fc626cf7350d4603a367b6c2d61be6d6/artifacts/model
+status: READY
+status_message: null
+storage_location: /Users/abhinavchawla/MLEng-politicalparties-python-exercise/data/841595567317110903/fc626cf7350d4603a367b6c2d61be6d6/artifacts/model
+user_id: null
+version: 1

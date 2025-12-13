@@ -8,6 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 
 COPY ./text_loader/ ./text_loader/
+COPY ./features/ ./features/
 COPY ./model-inference-endpoint/ .
 
 EXPOSE 8000

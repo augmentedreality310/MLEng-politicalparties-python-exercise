@@ -13,5 +13,8 @@ services:
       dockerfile: ./model-inference-endpoint/Dockerfile
     volumes:
       - ../data:/usr/src/app/data
+      - ../data:/Users/abhinavchawla/MLEng-politicalparties-python-exercise/data
     ports:
       - "8000:8000"
+    environment:
+      - MODEL_NAME=tweet_classifier_logreg
