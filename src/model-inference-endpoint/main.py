@@ -5,8 +5,11 @@ import sys
 import mlflow
 import mlflow.sklearn
 
-# Ensure src is in path so we can import features if needed
+# Ensure src is in path so we can import packages like text_loader
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+# Import custom modules so pickle can find them
+from text_loader.loader import DataLoader
 
 mlflow.set_tracking_uri('data')
 
@@ -19,7 +22,7 @@ model = None
 
 def load_model():
     global model
-    model_name = os.getenv("MODEL_NAME", "tweet_classifier")
+    model_name = os.getenv("MODEL_NAME", "tweet_classifier_logreg")
     print(f"Attempting to load model: {model_name}")
     
     try:

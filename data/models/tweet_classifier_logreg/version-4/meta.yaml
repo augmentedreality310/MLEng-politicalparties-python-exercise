@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1765827193714
+current_stage: None
+description: null
+last_updated_timestamp: 1765827193714
+name: tweet_classifier_logreg
+run_id: de84aba4883b44b184ea6b11c0099079
+run_link: null
+source: /Users/abhinavchawla/MLEng-politicalparties-python-exercise/data/841595567317110903/de84aba4883b44b184ea6b11c0099079/artifacts/model
+status: READY
+status_message: null
+storage_location: /Users/abhinavchawla/MLEng-politicalparties-python-exercise/data/841595567317110903/de84aba4883b44b184ea6b11c0099079/artifacts/model
+user_id: null
+version: 4

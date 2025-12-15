@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/abhinavchawla/MLEng-politicalparties-python-exercise/mlruns/0/4b82a8d1337f43be9af5c40d29d04fd0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4b82a8d1337f43be9af5c40d29d04fd0
+run_name: languid-eel-740
+run_uuid: 4b82a8d1337f43be9af5c40d29d04fd0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765827050646
+status: 1
+tags: []
+user_id: abhinavchawla

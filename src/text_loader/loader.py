@@ -14,7 +14,8 @@ class DataLoader:
     def load_data(self):
         """Loads data from a CSV file."""
         self.data = pd.read_csv(self.filepath)
-        return self.data
+        self.data = self.data.dropna(subset=["Tweet", "Party"])
+        return self.data.reset_index(drop=True)
 
     @staticmethod
     def remove_characters(text: str) -> str:
