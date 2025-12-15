@@ -1,7 +1,7 @@
 import pandas as pd
 import mlflow
 import mlflow.sklearn
-from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 import sys
@@ -13,7 +13,6 @@ sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from text_loader.loader import DataLoader
-from features.sentiment import SentimentExtractor
 
 def train():
     print("Initializing DataLoader...")
@@ -30,19 +29,13 @@ def train():
     
     print("Creating Pipeline with Logistic Regression...")
     
-    # FeatureUnion combines features from multiple transformers
-    combined_features = FeatureUnion([
+    pipeline = Pipeline([
         ('tfidf', TfidfVectorizer(
             max_features=2500, 
             min_df=1, 
             max_df=0.8, 
             preprocessor=dl.clean_text
         )),
-        ('sentiment', SentimentExtractor())
-    ])
-    
-    pipeline = Pipeline([
-        ('features', combined_features),
         ('clf', LogisticRegression(max_iter=1000))
     ])
     
